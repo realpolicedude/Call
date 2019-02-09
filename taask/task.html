@@ -1,0 +1,94 @@
+<!doctype html>
+
+<link href="task.css" rel="stylesheet" type="text/css">
+
+ <script language="javascript">
+	function toggle(source) {
+	checkboxes = document.getElementsByName('name');
+	for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+  
+}
+
+
+</script>
+
+<title>NOC</title>	
+
+<ul class="people" style="margin-right: 1000px">
+<li class="phone">
+    <input type="checkbox" onclick="toggle(this)" id="task1"/>
+    <label for="task1">All Phones</label>
+  </li>
+  <li class="phone">
+    <input type="checkbox" name="name" id="task2" />
+    <label for="task2">601</label>
+  </li>
+  <li class="phone">
+    <input type="checkbox" name="name" id="task3"/>
+    <label for="task3">602</label>
+  </li>
+  <li class="phone">
+    <input type="checkbox" name="name" id="task4" />
+    <label for="task4">603</label>
+  </li>
+  <li class="phone">
+    <input type="checkbox" name="name" id="task5" />
+    <label for="task5">604</label>
+  </li>
+  <li class="phone">
+    <input type="checkbox" name="non" id="task6" />
+    <label for="task6">Mobile</label>
+  </li>
+  
+</ul>
+<table style="margin-right: 250px">
+	<thead>
+		<th>Person</th>
+		<th>Hours</th>
+		<th>Days</th>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Frank</td>
+		<td>8am - 5pm</td>
+		<td>Mon - Fri</td>
+	</tr>
+	<tr>
+		<td>JeremyS</td>
+		<td>9am - 6pm</td>
+		<td>Mon - Fri</td>
+	</tr>
+	<tr>
+		<td>Jon M</td>
+		<td>10am - 7pm</td>
+		<td>Mon - Fri</td>
+	</tr>
+	<tr>
+		<td>Wesley</td>
+		<td>8am - 6pm</td>
+		<td>Sat - Fri</td>
+	</tr>
+	<tr>
+		<td>Winston</td>
+		<td>8am - 6pm</td>
+		<td>Thurs - Sun</td>
+	</tr>
+	<tr>
+		<td>Chris</td>
+		<td>4pm - 1am</td>
+		<td>Sat - Sun</td>
+	</tr>
+	<tr>
+		<td>Alison</td>
+		<td>4pm - 1am</td>
+		<td>Mon - Fri</td>
+	</tr>
+	<tr>
+		<td>AJ</td>
+		<td>4pm - 1am</td>
+		<td>Mon - Fri</td>
+	</tr>
+	</tbody>
+</table>
